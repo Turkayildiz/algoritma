@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="not_hesaplama"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 03:33:23 &#214;S"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzA7MDI6MzE6Mjggw5ZTOzI0NDQ="/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzA7MDM6MzM6MjMgw5ZTOzE7MjU1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize1, vize2, final" type="Integer" array="False" size=""/>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <output expression="&quot;birinci vize giriniz&quot;" newline="True"/>
+            <input variable="vize1"/>
+            <output expression="&quot;ikinci vize giriniz&quot;" newline="True"/>
+            <input variable="vize2"/>
+            <output expression="&quot;finaleri giriniz&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="((vize1+vize2)/2)*0.3+final*0.7"/>
+            <if expression="ortalama&gt;=50">
+                <then>
+                    <output expression="&quot;ge&#231;tiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;kald&#305;n&#305;z&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
