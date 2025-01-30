@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="rasgele s&#305;n&#305;f ortalama hesab&#305;"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 04:11:33 &#214;S"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzA7MDQ6MDU6MzQgw5ZTOzI0NDQ="/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzA7MDQ6MTE6MzMgw5ZTOzE7MjU0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="notlar" type="Integer" array="True" size="40"/>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <assign variable="ortalama" expression="0"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <for variable="index" start="0" end="39" direction="inc" step="1">
+                <assign variable="notlar[index]" expression="Random(100)"/>
+            </for>
+            <for variable="index" start="0" end="39" direction="inc" step="1">
+                <assign variable="ortalama" expression="ortalama+notlar[index]"/>
+            </for>
+            <output expression="&quot;s&#305;n&#305;f&#305;n s&#305;nav ortalamas&#305;:&quot;&amp;(ortalama/40)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
