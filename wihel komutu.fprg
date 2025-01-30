@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="wihel komutu"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 04:20:12 &#214;S"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzA7MDQ6MTI6NTYgw5ZTOzI0NDY="/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzA7MDQ6MjA6MTIgw5ZTOzE7MjU0NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="elemanSay&#305;s&#305;, index" type="Integer" array="False" size=""/>
+            <output expression="&quot;dizinin elaman say&#305;s&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="elemanSay&#305;s&#305;"/>
+            <declare name="say&#305;lar" type="Integer" array="True" size="elemanSay&#305;s&#305;"/>
+            <assign variable="index" expression="0"/>
+            <while expression="index&lt;elemanSay&#305;s&#305;">
+                <assign variable="say&#305;lar[index]" expression="Random(100)+1"/>
+                <assign variable="index" expression="index+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
