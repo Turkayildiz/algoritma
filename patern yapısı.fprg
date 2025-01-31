@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="patern yap&#305;s&#305;"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-31 11:16:30 &#214;&#214;"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTA6NTQ6NDggw5bDljsyNTgy"/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTE6MTY6MzAgw5bDljsxOzI2ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bironcekisayi, ikioncekisayi, sayi, sayac, bittis" type="Integer" array="False" size=""/>
+            <assign variable="ikioncekisayi" expression="1"/>
+            <assign variable="bironcekisayi" expression="1"/>
+            <output expression="&quot;ka&#231; kere yaps&#305;n&quot;" newline="True"/>
+            <input variable="bittis"/>
+            <for variable="sayac" start="1" end="bittis" direction="inc" step="1">
+                <assign variable="sayi" expression="ikioncekisayi + bironcekisayi"/>
+                <output expression="&quot;yeni say&#305;: &quot;&amp;sayi" newline="True"/>
+                <assign variable="ikioncekisayi" expression="bironcekisayi"/>
+                <assign variable="bironcekisayi" expression="sayi"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

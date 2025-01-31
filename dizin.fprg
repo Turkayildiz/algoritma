@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="dizin"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-31 11:35:21 &#214;&#214;"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTE6MTY6MzIgw5bDljsyNTc0"/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTE6MzU6MjEgw5bDljsxOzI2ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bironcekisay&#305;, ikionceksay&#305;, say&#305;, sayac, adet" type="Integer" array="False" size=""/>
+            <output expression="&quot;ka&#231;&#305;nc&#305; elemana kadar bulsun&quot;" newline="True"/>
+            <input variable="adet"/>
+            <declare name="fib" type="Real" array="True" size="adet"/>
+            <assign variable="fib[0]" expression="1"/>
+            <assign variable="fib[1]" expression="1"/>
+            <for variable="sayac" start="2" end="adet-1" direction="inc" step="1">
+                <assign variable="fib[sayac]" expression="fib[sayac-2]+fib[sayac-1]"/>
+                <output expression="&quot;diziinin&quot;&amp;sayac&amp;&quot;eleman&#305;: &quot;&amp;fib[sayac]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

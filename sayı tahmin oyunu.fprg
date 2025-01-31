@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="say&#305; tahmin oyunu"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-31 10:26:01 &#214;&#214;"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MDk6Mzg6NDUgw5bDljsyNTg5"/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTA6MjY6MDEgw5bDljsxOzI2Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tahmin, say&#305;, hak, kabullenme" type="Integer" array="False" size=""/>
+            <assign variable="hak" expression="6"/>
+            <assign variable="say&#305;" expression="random(50)+1"/>
+            <do expression="hak!=0">
+                <output expression="&quot;bir say&#305; tahmin ediniz 1-50 aras&#305;&quot;" newline="True"/>
+                <input variable="tahmin"/>
+                <if expression="say&#305;=tahmin">
+                    <then>
+                        <output expression="&quot;teklediniz tebrikler kazand&#305;n&#305;z&quot;" newline="True"/>
+                        <assign variable="hak" expression="0"/>
+                    </then>
+                    <else>
+                        <if expression="say&#305;&gt;tahmin">
+                            <then>
+                                <output expression="&quot;daha b&#252;y&#252;k bir say&#305; se&#231;in&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;daha k&#252;&#231;&#252;k bir say&#305; se&#231;in&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <assign variable="hak" expression="hak-1"/>
+                        <output expression="&quot;hak&#305;n&#305;z &quot;&amp;hak&amp;&quot; kald&#305;&quot;" newline="True"/>
+                        <if expression="hak=0">
+                            <then>
+                                <output expression="&quot;kaybetiniz&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
