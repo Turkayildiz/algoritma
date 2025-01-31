@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1-100 kara asal say&#305;lar&#305;n hepsi"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-31 11:34:22 &#214;S"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTA6MjU6Mzggw5ZTOzI0NDg="/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTA6NTI6NTUgw5ZTOzY7dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MDk6MTY6MDcgw5bDljthc2Fsc2F5xLEuZnByZzs2Nzkz"/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTE6MTg6NDYgw5ZTOzQ7dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MDk6NTc6MjAgw5ZTO2Zha3TDtnJpeWVsLmZwcmc7NjgyNQ=="/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTE6MzQ6MjIgw5ZTOzM7MjU1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, say&#305;, say&#305;adeti, max" type="Integer" array="False" size=""/>
+            <declare name="metin" type="String" array="False" size=""/>
+            <output expression="&quot;ka&#231;'a kadar olan asal say&#305;lar&#305; bulay&#305;m&quot;" newline="True"/>
+            <input variable="max"/>
+            <for variable="say&#305;" start="2" end="max" direction="inc" step="1">
+                <assign variable="say&#305;adeti" expression="0"/>
+                <assign variable="sayac" expression="1"/>
+                <assign variable="metin" expression="&quot;&quot;"/>
+                <while expression="sayac&lt;say&#305;">
+                    <if expression="say&#305;%sayac=0">
+                        <then>
+                            <assign variable="say&#305;adeti" expression="say&#305;adeti+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="sayac" expression="sayac+1"/>
+                </while>
+                <if expression="say&#305;adeti&gt;=2">
+                    <then/>
+                    <else>
+                        <assign variable="metin" expression="metin&amp;ToString(say&#305;)"/>
+                        <output expression="metin" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

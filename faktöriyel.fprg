@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fakt&#246;riyel"/>
+        <attribute name="authors" value="turka"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-31 10:23:34 &#214;S"/>
+        <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MDk6NTc6MjAgw5ZTOzI0NTI="/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTA6MjM6MzQgw5ZTOzE7MjU1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, islem, i" type="Integer" array="False" size=""/>
+            <declare name="metin" type="String" array="False" size=""/>
+            <assign variable="islem" expression="1"/>
+            <assign variable="metin" expression="&quot;&quot;"/>
+            <output expression="&quot;fakt&#246;riyelini almak istedi&#287;iniz say&#305;n&#305;n giriniz&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <for variable="i" start="say&#305;" end="1" direction="dec" step="1">
+                <if expression="i!=1">
+                    <then>
+                        <assign variable="metin" expression="metin&amp;ToString(i)&amp;&quot;*&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="metin" expression="metin&amp;ToString(i)"/>
+                    </else>
+                </if>
+                <assign variable="islem" expression="islem*i"/>
+            </for>
+            <output expression="say&#305;&amp;&quot;! =&quot;&amp;metin&amp;&quot;=&quot;&amp;islem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

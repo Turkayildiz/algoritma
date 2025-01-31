@@ -4,14 +4,14 @@
         <attribute name="name" value="asalsay&#305;"/>
         <attribute name="authors" value="turka"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-01-31 09:37:08 &#214;&#214;"/>
+        <attribute name="saved" value="2025-01-31 11:04:57 &#214;S"/>
         <attribute name="created" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MDk6MTY6MDcgw5bDljsyNTgz"/>
-        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MDk6Mzc6MDggw5bDljsxOzI2OTU="/>
+        <attribute name="edited" value="dHVya2E7VFVSS0FZOzIwMjUtMDEtMzE7MTE6MDQ6NTcgw5ZTOzI7MjU1Ng=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="say&#305;, say&#305;adeti" type="Integer" array="False" size=""/>
+            <declare name="say&#305;, say&#305;adeti, sayac" type="Integer" array="False" size=""/>
             <assign variable="say&#305;adeti" expression="0"/>
             <assign variable="sayac" expression="1"/>
             <output expression="&quot;bir say&#305; giriniz&quot;" newline="True"/>
@@ -19,15 +19,15 @@
             <while expression="sayac&lt;say&#305;">
                 <if expression="say&#305;%sayac=0">
                     <then>
-                        <assign variable="adet" expression="adet+1"/>
+                        <assign variable="say&#305;adeti" expression="say&#305;adeti+1"/>
                     </then>
                     <else/>
                 </if>
                 <assign variable="sayac" expression="sayac+1"/>
             </while>
-            <if expression="adet=2">
+            <if expression="say&#305;adeti=2">
                 <then>
-                    <output expression="&quot;girilen:&quot; &amp;sayi&amp;&quot;Asal sayidir&quot;" newline="True"/>
+                    <output expression="&quot;girilen:&quot; &amp;say&#305;&amp;&quot;Asal sayidir&quot;" newline="True"/>
                 </then>
                 <else>
                     <output expression="&quot;girilen:&quot;&amp;say&#305;&amp;&quot;Asal Degildir&quot;" newline="True"/>
